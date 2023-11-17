@@ -13,6 +13,19 @@
             "Hello " + person + ", nice to meet you.";
         }
       }
+
+      function myConfirm() {
+        var message;
+        var action = confirm("Please choose a button!");
+
+        if (action == true) {
+          message = "You pressed OK!";
+        } else {
+          message = "You pressed cancel!";
+        }
+
+        document.getElementById("callMe").innerHTML = message;
+      }
     </script>
   </head>
 
@@ -21,7 +34,7 @@
 
     <p id="callMe">My first message: HELLO</p>
 
-    <button type="button" onclick="myFunction()">Click Me</button>
+    <button type="button" onclick="myConfirm()">Click Me</button>
     <script>
       window.alert("Your favourite number is: " + 66);
       document.write("<br>" + Date());
