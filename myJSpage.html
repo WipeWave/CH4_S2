@@ -4,10 +4,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>My First Java Script Page</title>
-    <!-- External reference Javascript -->
+    <!-- Internal Javascript -->
     <script>
       function myFunction() {
-        document.getElementById("callMe").innerHTML = "Total= " + 2 * 2;
+        var person = prompt("Please enter your name:", "John Doe");
+        if (person != null) {
+          document.getElementById("callMe").innerHTML =
+            "Hello " + person + ", nice to meet you.";
+        }
       }
     </script>
   </head>
@@ -23,11 +27,5 @@
       document.write("<br>" + Date());
       document.write("<br>CMPF123");
     </script>
-
-    <pre>
-			<script>
-				document.write("good afternoon");
-			</script>
-		</pre>
   </body>
 </html>
